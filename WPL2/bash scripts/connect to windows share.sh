@@ -27,6 +27,9 @@ mount "/home/$Usern@ssol.local/share" -o uid="$Usern@ssol.local" -o gid="domain 
 exit
 ############################################################
 
+#script uitvoerbaar maken
+># chmod +x connectToShare.sh
+
 #nu moeten we er voor zorgen dat elke nieuwe AD gebruiker dit script heeft 
 
 ># cp connectToShare.sh /etc/skel/connectToShare.sh
