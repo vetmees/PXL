@@ -1,0 +1,42 @@
+#navigeer naar /home
+#maak backup van al de folders is /home
+> # tar cvf home.tar *
+
+#maak een map aan in de root home map voor de backup in op te slaan
+> # mkdir /root/backup_home
+
+# kijk dat je nog altijd in /home zit
+# verplaats de home.tar file naar de backup map
+> # mv home.tar /root/backup_home
+
+########################################################################
+
+#maak een script aan 
+sudo nano cleanboot.sh
+
+#-> in het script
+
+>#!/bin/bash
+> rm -rdf /home/*
+> cp /root/backup_home/home.tar /home/
+> tar xvf /home/home.tar -C /home
+> rm /home/home.tar
+
+#Sla dit script op "ctrl +x" -> 'y' -> "enter"
+
+########################################################################
+
+# maak het script uitvoerbaar
+
+># chmod +x cleanboot.sh
+
+#zet het script in crontab
+
+># crontab -e
+
+-->> in crontab voeg toe :
+
+@reboot /root/cleanboot.sh
+
+# sla op!
+
