@@ -1,0 +1,25 @@
+    1  touch script
+    2  touch scrupt
+    3  touch scrapt
+    4  hist
+    5  history 
+    6  echo op CTRL + R blijven drukken tot je op je file komt
+    7  echo op CTRL + R blijven drukken tot je op je file komt -1
+    8  clear
+    9  man bang
+   10  man !
+   11  history 
+   12  touch scrapt
+   13  hist
+   14  history 
+   15  clear
+   16  man man
+   17  man manµ
+   18  man man
+   19  man 7
+   20  man 7 man
+   21  man 7
+   22  touch scrapt -2
+   23  touch scrapt -2 
+   24  clear
+   25  history > oef14.txt

@@ -1,0 +1,20 @@
+    1  touch info.txt
+    2  echo $USER > info.txt 
+    3  cat info.txt 
+    4  echo $UID >> info.txt 
+    5  cat info.txt 
+    6  ls /r*
+    7  ls /r* 2> /dev/null
+    8  touch myerrors
+    9  ls /r* 2> myerrors 
+   10  ls /tmp/*
+   11  ls /tmp/* &> inhoudTMP.full
+   12  zcho $UID >> info.txt 
+   13  cat info.txt 
+   14  zcho $USER > info.txt 
+   15  cat info.txt 
+   16  ls /*
+   17  ls /*root*
+   18  ls /* 2>
+   19  ls /* 1> /dev/null
+   20  history > oef16.txt

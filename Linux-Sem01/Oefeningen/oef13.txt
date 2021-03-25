@@ -1,0 +1,25 @@
+    1  clear
+    2  man date
+    3  date -d '2021-01-01'
+    4  date -d '2021-01-01' +%A
+    5  echo "my bd will be on a $(date -d '2021-01-01' +%A)
+"
+    6  echo "today it is $(date +%A)
+"
+    7  echo "today it is $(date +%A), $(date 
+"
+"
+    8  man date
+    9  echo "today it is $(date +%A), $(date '+%d +%M +%Y')"
+   10  echo "today it is $(date +%A), $(date '+%d %M %Y')"
+   11  man date
+   12  echo "today it is $(date +%A), $(date '+%d %B %Y')"
+   13  echo "today it is $(date +%A), $(date '+%d %B %Y') & the time is $(date '+%H:%M')"
+   14  LC_TIME=nl_BE.UTF-8
+   15  export LC_TIME
+   16  echo "today it is $(date +%A), $(date '+%d %B %Y') & the time is $(date '+%H:%M')"
+   17  LC_TIME=en_US.UTF-8
+   18  export LC_TIME
+   19  clear
+   20  echo -e "de in houd van mijn homefolder\n $(tree /home/$USER -L 1)"
+   21  history >> oef13.txt 

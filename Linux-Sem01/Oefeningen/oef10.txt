@@ -1,0 +1,67 @@
+   89  type cd
+   90  which cd
+   91  type cat
+   92  which cat
+   93  clear
+   94  type mkdir
+   95  ll
+   96  clear
+   97  type kill
+   99  which kill
+  100  type -a kill
+  101  dirs
+  102  clear
+  103  nano .bashrc
+# in .bash rc#
+		deze alias aanmaken onderaan in .bashrc  :alias dirs='tree -dai -L 1'
+		
+  104  man tree
+  105  nano .bashrc
+  106  dirs
+  107  logout
+  108  dirs
+  119  man echo
+  123  echo -e 'Een\nTwee\nDrie'
+  124  alias
+  125  echo 'unalias ls' voor de oef, deze heb ik nie gedaan
+  126  clear
+  127  mkdir scripts
+  128  echo "Het ls2 bestand wordt uitgevoerd!" > scripts/ls
+  129  ls
+  130  cd scripts/
+  131  ls
+  132  cat ls
+  133  clear
+  134  chmod u+x ls
+  135  cd
+  136  echo $PATH
+  137  which ls
+  138  which ls2
+  139  ls
+  140  cd scripts/
+  141  ls
+  142  vm ls ls2
+  143  mv ls ls2
+  144  ls
+  145  cd
+  146  ls2
+  147  cd scripts/
+  148  ls2
+  149  which ls2
+  150  ll
+  151  echo $PATH
+  152  cd
+  153  echo $PATH
+  154  PATH="$PATH:/home/student/scripts"
+  155  echo $PATH
+  156  ls2
+  157* 
+  158  ls2
+  159  ls
+  160  which ls2
+  161  echo $PATH
+  162  PATH="/home/student/.local/bin:/home/student/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin"
+  163  $PATH
+  164  echo $PATH
+  165  clear
+  166  history > oef10.txt
