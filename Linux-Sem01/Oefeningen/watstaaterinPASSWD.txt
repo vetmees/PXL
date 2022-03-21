@@ -1,7 +1,0 @@
-1=username
-2=wachtwoord
-3=UserId
-4=Primary Group ID
-5=User Id Info
-6=Home directory
-7=absolute path of a command or shel (/bin/bash)
