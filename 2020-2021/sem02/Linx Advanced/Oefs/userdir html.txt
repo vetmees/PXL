@@ -1,0 +1,42 @@
+#users in home directory een eigen public_hmtl kunnen laten maken
+#vim /etc/httpd/conf/httpd.conf 
+
+<IfModule mod_userdir.c>
+Userdir enabled student
+Userdir public_html
+</IfModule>
+
+<Directory "/home/*/public_html/">
+Options Indexes Includes FollowSymLinks
+Require all granted
+</Directory>
+
+
+
+
+mkdir /home/student/public_html
+chmod +x /home /home/*
+#httpd.d toegang geven tot webcontent=service gaat ook zoeken in de public_html
+chcon -R --reference=/var/www/html/ /home/*/public_html
+
+#SELinux
+setsebool -P httpd_enable_homedirs  true
+
+apachectl configtest
+apachectl graceful
+
+#index maken voor je website in public_html
+vim ~/public_html/index.html
+
+<html>
+        <head>
+                <titel>page</titel>
+        </head>
+        <body>
+                <h1>test</h1>
+        </body>
+</html>
+
+
+#############
+http://localhost/~student/
