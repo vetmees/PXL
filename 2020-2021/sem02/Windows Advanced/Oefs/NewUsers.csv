@@ -1,0 +1,8 @@
+﻿First Name,Last Name,Job Title,Office Phone,Organizational Unit,AddToGroups,Enabled
+Jonas,Vermesen,CEO,123-537-8775,"OU=Domain Admins,OU=Domain Users,DC=SSOL,DC=Local","Domain Admins, ICT",TRUE
+Robin,Venken,Office Administration,123-537-8776,"OU=Domain Admins,OU=Domain Users,DC=SSOL,DC=Local","Domain Admins, ICT",TRUE
+Samuel,Nzokang,Graphics Designer,123-537-8777,"OU=Domain Admins,OU=Domain Users,DC=SSOL,DC=Local","Domain Admins, ICT",TRUE
+Petimat,Radueva,Marketing Specialist,123-537-8778,"OU=Domain Users,DC=SSOL,DC=Local",Student,FALSE
+Farid,Haidari,Marketing Specialist,123-537-8779,"OU=Domain Users,DC=SSOL,DC=Local",Student,TRUE
+Brent,Boes,Sys Admin,123-537-8780,"OU=Domain Users,DC=SSOL,DC=Local",Student,TRUE
+Nick,Budeners,Graphics Designer,123-537-8781,"OU=Domain Users,DC=SSOL,DC=Local",Student,FALSE

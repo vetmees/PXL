@@ -1,0 +1,2 @@
+Add-WebConfigurationProperty -PSPath IIS:\Sites	-Filter system.webServer/staticContent -Name "." -Value @{fileExtension='.testje';mimeType='application/testje'} 
+

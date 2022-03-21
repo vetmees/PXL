@@ -1,0 +1,1 @@
+<%Response.Write ("<h1>This is default.asp</h1>") %>
