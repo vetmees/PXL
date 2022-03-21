@@ -1,0 +1,34 @@
+    1  clear
+    2  history 
+    3  alias
+    4  alias rm='rm 2> /dev/null'
+    5  rm test
+    6  alias rm='rm 2> /dev/null && echo "fout"'
+    7  rm test
+    8  alias rm='rm 2> /dev/null && `echo "fout"`'
+    9  rm test
+   10  alias rm='rm 2> /dev/null'
+   11  unalias rm
+   12  rm test
+   13  alias rm='rm 2> /dev/null'
+   14  alias rm='rm 1> echo "succes"'
+   15  rm test
+   16  touch test
+   17  rm test
+   18  alias rm='rm 2> /dev/null' && echo 'gelukt'
+   19  rm test
+   20  alias rm='rm 2> /dev/null'
+   21  rm test && echo gelukt || echo fout
+   22  history > oef11.txt
+   23  cp /home /backup && shutdown now || er ging iets mis
+   24  cp /home/ /backup && shutdown now || er ging iets mis
+   25  man cp
+   26  cp -r /home /backup && shutdown now || er ging iets mis
+   27  sudo cp -r /home /backup && shutdown now || er ging iets mis
+   28  su -
+   29  echo 'ALS ROOT: cp -r /home /backup && shutdown now || echo foutje'
+   30  echo Hello#world
+   31  echo Hello #world
+   32  echo \\\\#\"\ \\ #\\
+   33  history 
+   34  history > oef11.txt 

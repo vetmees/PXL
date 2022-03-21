@@ -1,0 +1,72 @@
+    1  vi .bashrc
+    2  exit
+    3  su -i
+    4  sudo -i
+    5  exit
+    6  dir
+    7  ls
+    8  cat mijnhistory 
+    9  ip a
+   10  exit
+   11  ip a s enp0s3 | grep 'inet '
+   12  ip a
+   13  ifconfig
+   14  ifconfig s ens160 | grep 'inet ' | tr -s ' '
+   15  ifconfig s ens160 | grep 'inet '
+   16  ifconfig s virbr0 | grep 'inet '
+   17  ip a s virbr0 | grep 'inet '
+   18  ip a s virbr0 | grep 'inet ' | tr -s ' '
+   19  ip a s virbr0 | grep 'inet ' | tr -s ' ' | cut -d ' ' -f3 | cut -d / -f1
+   20  history > mijnhistory
+   21  cat mijnhistory 
+   22  sudo update db
+   23  sudo apt update
+   24  sudo dnf update
+   25  clear
+   26  sudo shutdown now
+   27  PS1="\n\d \t - PTS\l\n\u@\h:\w $ "
+   28  history
+   29  vi .bashrc
+   30  exit
+   31  clear
+   32  vi .bashrc
+   33  exit
+   34  echo -e "Hello , i am \h"
+   35  echo -e "Hello , i am '\h'"
+   36  echo -e "Hello , i am '\\u'"
+   37  echo -e "Hello , i am \\u"
+   38  echo -e Hello , i am \\u
+   39  echo -e Hello , i am \u
+   40  echo -e Hello , i am $USER
+   41  bash
+   42  clear
+   43  echo Hello, i am $USRE and my homefolder is $HOME on the pc with name $HOSTNAME
+   44  echo Hello, i am $USRE and my homefolder is $HOME on the pc with name $HOSTNAME. i am now working in the folder $PWD
+   45  echo dit zijn de oefeningen van h12
+   46  clear
+   47  mijnvar=super
+   48  echo dag ${mijnvar}vrouw en ${mijnvar}man
+   49  unset mijnvar
+   50  echo dag ${mijnvar}vrouw en ${mijnvar}man
+   51  date +%A -d 03/31/2021
+   52  LC_TIME
+   53  echo $LC_TIME
+   54  locale
+   55  LC_TIME="nl_BE.UTF-8"
+   56  export LC_TIME
+   57  echo ik ben jarig op $(date +%A -d 03/31/2021)
+   58  echo vandaag is het `date +%A, %B, %Y`
+   59  echo vandaag is het `date +%A,\ %B\ %Y`
+   60  echo vandaag is het `date +%A,\%d \ %B\ %Y`
+   61  echo vandaag is het `date +%A, \%d\ %B\ %Y`
+   62  echo vandaag is het `date +%A,\ %d\ %B\ %Y`
+   63  echo vandaag is het `date +%A,\ %d\ %B\ %Y`. de tijd is `date +%h:\%m`
+   64  echo vandaag is het `date +%A,\ %d\ %B\ %Y`. de tijd is `date +%H:\%M`
+   65  echo de inhoud van mijn homefolder: `ls ~`
+   66  echo "de inhoud van mijn homefolder: `ls ~`"
+   67  echo "de inhoud van mijn homefolder: \n `ls ~`"
+   68  echo -e "de inhoud van mijn homefolder: \n `ls ~`"
+   69  echo -e "de inhoud van mijn homefolder:\n `ls ~`"
+   70  echo -e "de inhoud van mijn homefolder: \n`ls ~`"
+   71  ls -a
+   72  history > hist.txt

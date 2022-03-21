@@ -1,0 +1,48 @@
+  209  nano group.txt
+  210  clear
+  211  man groupadd
+  212  groupadd ict -g1200
+  213  sudo groupadd ict -g1200
+  214  groups
+  215  usermod -a -G ict
+  216  sudo usermod -a -G ict
+  217  groups
+  218  clear
+  219  sudo usermod -a -G ict student
+  220  groups
+  221  tail -5 /etc/group
+  222  sudo updatedb
+  223  groups
+  224  man groupmod 
+  225  groupmod -n ict helpdesk
+  226  groupmod -n helpdesk ict
+  227  sudo groupmod -n helpdesk ict
+  228  groups
+  229  tail -5 /etc/group
+  230  reboot
+  231  sudo reboot
+  232  history 
+  233  clear
+  234  groups
+  235  gpasswd -d student helpdesk 
+  236  sudo gpasswd -d student helpdesk 
+  237  usermod -a -g helpdesk student
+  238  usermod -g helpdesk student
+  239  sudo usermod -g helpdesk student
+  240  groups
+  241  logout
+  242  groups
+  243  mkdir bestand
+  244  touch bestand.txt
+  245  ls
+  246  ls -l
+  247  ls -l | grep bestand
+  248  clear
+  249  usermod -g student student
+  250  sudo usermod -g student student
+  251  groupdel helpdesk 
+  252  sudo groupdel helpdesk 
+  253  groups
+  254  logout
+  255  groups
+  256  history > oef22.txt
