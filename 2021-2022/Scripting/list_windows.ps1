@@ -1,0 +1,1 @@
+Get-ChildItem C:\Windows -File | select Name, CreationTime | sort CreationTime -Descending

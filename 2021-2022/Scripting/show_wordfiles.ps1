@@ -1,0 +1,1 @@
+Get-ChildItem C:\Users\* -Recurse -Include *.doc,*.docx | select Name, CreationTime | where CreationTime -gt "10/10/21"

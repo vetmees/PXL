@@ -1,0 +1,1 @@
+Get-ChildItem C:\Windows\ -Force -Recurse -ErrorAction Ignore| measure Length -Sum
