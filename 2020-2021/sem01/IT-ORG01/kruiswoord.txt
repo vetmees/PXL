@@ -1,0 +1,16 @@
+12: retired services
+9: SLA
+3: processen
+8: RACI
+10: DML : definitive media library
+11: incident
+1: KPI: Key performance improvement
+5: gesentraliseerde
+
+
+
+6:Capabilities
+7:remediation
+1:kerndienst
+2:kennis
+4:
